@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Soil And Crop Predictor</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Healthy soil, wise crops </h1>
+            <p>Empower your farm with the science of soil.
+Predict, plan, and grow with confidence.</p>
+            <form id="Predict" class="form-inputs">
+                <input type="number" name="pH" id="pH" placeholder="⚗️ pH value">
+                <input type="number" name="rainfall" id="rainfall" placeholder="🌧️ Rainfall">
+                <input type="number" name="humidity" id="humidity" placeholder="💧 Humidity">
+                <input type="number" name="temperature" id="temperature" placeholder="🌡️ Temperature">
+                <input type="number" placeholder="🌿 Nitrogen (N)" name ="N" id="N">
+                <input type="number" placeholder="🌱 Phosphorus (P)" name="P" id="P">
+                <input type="number" placeholder="🍌 Potassium (K)" name="K" id="K">
+                <button type="submit" id="submitBtn">Predict Now</button>
+            </form>
+            <div id="output" style="display: none; ">
+                <p>🌾 Soil Type: <span id="soil_re"></span></p>
+                <p>🚜 Recommended Crop: <span id="crop_re"></span></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="/static/script.js"></script>
+    </body>
+
+</html>
